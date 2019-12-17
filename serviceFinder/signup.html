@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+<head>
+  <title>Service Finder</title>
+  <meta charset="utf-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  
+  <style>
+      body{
+           background-color: 
+#f4f6f9;
+
+      }
+    </style>
+    
+   
+
+  
+</head>
+<body>
+    
+    <script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	
+    
+
+	<!--HEADER START-->
+	<div class="main-navigation navbar-fixed-top">
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">Service Finder</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="index.html">Home</a></li>
+			    <li><a href="#contact">Contact</a></li>
+			    <li><a href="index.html #about">About</a></li>
+			    <li><a href="login.html">Login</a></li>
+			    
+			    <li><a href="signup.html">Signup</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<!--HEADER END-->
+
+	<!--BANNER START-->
+	<div class="container" id="banner">
+	    <h1>Service Finder</h1>
+        <hr class="hr"></hr>
+	</div>
+	<!--BANNER END-->
+    
+    <div class="container">
+        <div class="row">
+           <div class="col-md-1"></div>
+            <div class="col-md-5 text-center white">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Register...</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4>Register as an user!!!</h4>
+			        <form class="" action="regUr.php" method="POST"  >
+				      <div class="form-group">
+                        <label for="urName">Fullname</label>
+                        <input type="text" class="form-control" name="urName" placeholder="Fullname">
+                      </div>
+                      <div class="form-group">
+                        <label for="urEmail">Email address</label>
+                        <input type="email" class="form-control" name="urEmail" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="urPassword">Password</label>
+                        <input type="password" class="form-control" name="urPassword" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="confirmurPassword">Confirm password</label>
+                        <input type="password" class="form-control" name="confirmurPassword" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="urPhone">Mobile number</label>
+                        <input type="text" class="form-control" name="urPhone" placeholder="017xxxxxxxx">
+                      </div>
+                      <div class="form-group">
+                        <label for="urAddress">Address</label>
+                        <input type="text" class="form-control" name="urAddress" placeholder="Address">
+                      </div>
+                      <div class="form-group">
+                        <label for="urPhoto">Choose photo</label>
+                        <input type="file"  name="urPhoto">
+                        </div>
+                      <div class="radio">
+                       <h5>Gender</h5>
+                        <label for="urGender">
+                            <input type="radio" name="urGender" value="Male">
+                            Male
+                        </label>
+                      </div>  
+                      <div class="radio">
+                          <label for="urGender">
+                            <input type="radio" name="urGender" value="Female">
+                            Female
+                        </label>
+                      </div>
+                   <input type="submit" name="urSubmit">
+                    
+				    </form>
+				
+				    
+                
+             
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-5 text-center white">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Register...</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4>Register as a Servicer!!!</h4>
+			        <form class="" action="regSr.php" method="POST" >
+				      <div class="form-group">
+                        <label for="srName">Fullname</label>
+                        <input type="text" class="form-control" name="srName" placeholder="Fullname">
+                      </div>
+                      <div class="form-group">
+                        <label for="srEmail">Email address</label>
+                        <input type="email" class="form-control" name="srEmail" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="srPassword">Password</label>
+                        <input type="password" class="form-control" name="srPassword" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="confirmsrPassword">Confirm password</label>
+                        <input type="password" class="form-control" name="confirsurPassword" placeholder="Retype password">
+                      </div>
+                      <div class="form-group">
+                        <label for="srPhone">Mobile number</label>
+                        <input type="text" class="form-control" name="srPhone" placeholder="017xxxxxxxx">
+                      </div>
+                      <div class="form-group">
+                        <label for="srAddress">Address</label>
+                        <input type="text" class="form-control" name="srAddress" placeholder="Address">
+                      </div>
+                      <div class="form-group">
+                        <label for="srMinPay">Minimum payment</label>
+                        <input type="text" class="form-control" name="srMinPay" placeholder="Your Minimum Payment">
+                      </div>
+                      <h4>Choose your skills</h4>
+                      <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="electrician">
+                            Electrician
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="ac service">
+                            AC service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="tv service">
+                            TV service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="fridge service">
+                            Fridge service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="oven service">
+                            Oven service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="plumber">
+                            Plumber
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="fittings repair">
+                            Fittings repair
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="door lock repair">
+                            Door lock repair
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="car service">
+                            Car service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="bike service">
+                            Bike service
+                          </label>
+                          <label>
+                            <input type="checkbox" name="srSkills[]" value="furniture repair">
+                            Furniture repair
+                          </label>
+                          
+                      </div>
+                      <div class="form-group">
+                        <label for="srPhoto">Choose photo</label>
+                        <input type="file" name="srPhoto">
+                        </div>
+                      <div class="radio">
+                       <h5>Gender</h5>
+                        <label for="srGender">
+                            <input type="radio" name="srGender" value="Male">
+                            Male
+                        </label>
+                        <label for="urGender">
+                            <input type="radio" name="srGender" value="Female">
+                            Female
+                        </label>
+                      </div>  
+                  
+                    <input type="submit" name="srSubmit">
+				    </form>
+				
+				    
+                
+             
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+	  
+</body>
+</html>

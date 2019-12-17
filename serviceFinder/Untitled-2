@@ -1,0 +1,59 @@
+?>
+ 
+
+  
+   
+    
+   
+<div class="text-center">
+    <h2>Search result</h2>
+    <table class="table table-striped" align="center">
+        <tr>
+            <td>Name</td>
+            <td>Phone</td>
+            <td>Ratting</td>
+            <td>Minimum payment</td>
+        </tr>
+<?php
+        
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+//        print_r ($row);
+        
+        foreach($row as $i => $i_value){
+            $sql2= "SELECT srName, srAddress,srPhone, srServiceRatting, srMinPay FROM servicer WHERE srID='$i_value'";
+            $result2 = $conn->query($sql2);
+            while($row2 = $result2->fetch_assoc()) {
+?>
+                <tr>
+                   <td>
+                         <?php   echo $row2["srName"]; ?>
+                 </td>
+                   <td>
+                        <?php    echo $row2["srAddress"]; ?>
+                    </td>
+                    <td>
+                        <?php    echo $row2["srPhone"];  ?>
+                    </td>
+                    <td>
+                        <?php    echo $row2["srServiceRatting"]; ?>
+                    </td>
+                    <td>
+                        <?php    echo $row2["srMinPay"]; ?>
+                    </td>
+                   
+
+                </tr>
+                    <?php
+                
+            }
+        }
+        
+        
+    }
+} 
+
+else {
+    echo "0 results";
+}

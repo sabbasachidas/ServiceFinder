@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+<head>
+  <title>Service Finder</title>
+  <meta charset="utf-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/job.css">
+  
+  <style>
+      body{
+           background-color: 
+#f4f6f9;
+
+      }
+    </style>
+    
+   
+
+  
+</head>
+<body>
+    
+    <script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	
+    
+
+	<!--HEADER START-->
+	<div class="main-navigation navbar-fixed-top">
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">Service Finder</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="index.html">Home</a></li>
+			    <li><a href="#contact">Contact</a></li>
+			    <li><a href="index.html #about">About</a></li>
+			    <li><a href="login.html">Login</a></li>
+			    
+			    <li><a href="signup.html">Signup</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<!--HEADER END-->
+
+	
+    
+    <div class="container">
+        <div class="row">
+           
+            <div class="text-center white">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Login...</h3>
+                  </div>
+                  <div class="panel-body">
+                      
+			        <form class="" action="job.php" method="POST" >
+				      <div class="form-group">
+                        <label for="jobTitle">Job title:</label>
+                        <input type="text" class="form-control" name="jobTitle" placeholder="Job title">
+                      </div>
+                      <div class="form-group">
+                        <label for="jobLocation">Location:</label>
+                        <input type="text" class="form-control" name="jobLocation" placeholder="enter area name">
+                      </div>
+                      <div class="form-group">
+                        <label for="jobDetails">Short details:</label>
+                        <input type="text" class="form-control input-lg" id="input-lg" name="jobDetails" placeholder="enter short details of problem">
+                      </div>
+                       
+                  
+                    <input type="submit" name="srSubmit">
+				    </form>
+				
+				    
+                
+             
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+	  
+</body>
+</html>

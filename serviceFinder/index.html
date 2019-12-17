@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+<head>
+  <title>Service Finder</title>
+  <meta charset="utf-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <style>
+      body{
+           background-color: 
+#f4f6f9;
+
+      }
+    </style>
+    
+   
+
+  
+</head>
+<body>
+    
+    <script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	
+    
+
+	<!--HEADER START-->
+	<div class="main-navigation navbar-fixed-top">
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">Service Finder</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="index.html">Home</a></li>
+			    <li><a href="#contact">Contact</a></li>
+			    <li><a href="#about">About</a></li>
+			    <li><a href="login.html">Login</a></li>
+			    
+			    <li><a href="signup.html">Signup</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<!--HEADER END-->
+
+	<!--BANNER START-->
+	<div class="container" id="banner">
+	    <h1>Service Finder</h1>
+        <hr class="hr"></hr>
+	</div>
+	<!--BANNER END-->
+   <div class="container" id="CTP">
+       <div class="row">
+          <div class="col-md-3" id="categoryList">
+             
+             <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <p class="panel-title">Servicer Categories:</p>
+                  </div>
+                  <div class="panel-body">
+                  <ul class="list-group">
+                <li class="list-group-item"><a href="electrician.php">Electrician</a><span class="badge">12</span></li>
+                <li class="list-group-item"><a href="plumber.php">Plumber</a><span class="badge">17</span></li>
+                <li class="list-group-item"><a href="acAll.php">AC servicer</a><span class="badge">15</span></li>
+                <li class="list-group-item"><a href="fridgeAll.php">Fridge servicer</a><span class="badge">21</span></li>
+                
+                <li class="list-group-item"><a href="car.php">Car servicer</a><span class="badge">06</span></li>
+              <li class="list-group-item"><a href="fittings.php">Fittings servicer</a><span class="badge">12</span></li>
+              
+              <li class="list-group-item"><a href="category.html">Browse All</a></li>
+              </ul>
+                 </div>
+              </div>
+              
+              
+              
+              
+    
+          </div>
+          <div class="col-md-6 text-center white searchService">
+              
+                    
+                    <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Search Service...</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4>Service finder provides your nearest servicer's information and contact details. simply choose your your location and service you want hit search !!!</h4>
+			        <form action="search.php" method="POST" id="searchForm" label="Search Service">
+				        <div class="form-group form-inline">
+                      <label for="">Select Location:</label> <br>
+                      <select class="form-control " id="sel1">
+                        <option>Select Division</option>
+                        <option>Dhaka</option>
+                        
+                      </select>
+                        <label for="selectLocation"></label> <br>
+                      <select class="form-control" id="sel1" name="selectLocation">
+                        <option>Select Area</option>
+                        <option value="badda">Badda</option>
+                        <option value="banani">Banani</option>
+                        <option value="banani dohs">Banani DOHS</option>
+                        <option value="banglamotor">Banglamotor</option>
+                        <option value="bangshal">Bangshal</option>
+                        <option value="baridhara">Baridhara</option>
+                        <option value="basabo">Basabo</option>
+                        <option value="basundhara">Basundhara</option>
+                        <option value="cantonment">Cantonment</option>
+                        <option value="chaukbazar">Chaukbazar</option>
+                        <option value="dhamrai">Dhamrai</option>
+                        <option value="dhanmondi">Dhanmondi</option>
+                        <option value="dohar">Dohar</option>
+                        <option value="elephant road">Elephant road</option>
+                        <option value="hazaribagh">Hazaribagh</option>
+                        <option value="jatrabari">Jatrabari</option>
+                        <option value="kafrul">Kafrul</option>
+                        <option value="kamrangirchar">Kamrangirchar</option>
+                        <option value="karwanbazar">Karwan Bazar</option>
+                        <option value="keraniganj">Keraniganj</option>
+                        <option value="khilgaon">Khilgaon</option>
+                        <option value="khilkhet">Khilkhet</option>
+                        <option value="kotowali">Kotowali</option>
+                        <option value="lalbag">Lalbag</option>
+                        <option value="malibag">Malibag</option>
+                        <option value="mirpur dohs">Mirour DOHS</option>
+                        <option value="mogbazar">Mogbazar</option>
+                        <option value="mohakhali">Mohakhali</option>
+                        <option value="mohakhali dohs">Mohakhali DOSH</option>
+                        <option value="motijheel">Motijheel</option>
+                        <option value="nawabganj">Nawabganj</option>
+                        <option value="new market">New market</option>
+                        <option value="paltan">Paltan</option>
+                        <option value="ramna">Ramna</option>
+                        <option value="sukrabad">Sukrabad</option>
+                        <option value="tejgaon">Tejgaon</option>
+                        <option value="wari">Wari</option>
+                      </select>
+                    </div>
+                    <div class="form-group form-inline">
+                    <label for="service">Select Service:</label> <br>
+                    <select class="form-control" id="service" name="selectSkill">
+                        <option value="">Service</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="ac service">AC service</option>
+                        <option value="TV service">tv service</option>
+                        <option value="fridge service">Fridge service</option>
+                        <option value="oven service">Oven service</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="fittings repair">Fittings repair</option>
+                        <option value="Door lock repair">Door lock repair</option>
+                        <option value="car service">Car service</option>
+                        <option value="bike service">Bike service</option>
+                        <option value="furniture repair">Furniture repair</option>
+                      </select>
+
+                      
+                    </div>
+                    <input type="submit" name="search" value="Search">
+				    </form>
+				
+				    
+                
+             
+                  </div>
+              </div>
+              
+          </div>
+          <div class="col-md-3 text-center white">
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Post a job!</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4><a href="job.html">Customers can post a job for servicers!</a></h4>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Find a job!</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4><a href="">View available jobs(for servicers)</a></h4>
+                  </div>
+              </div>
+          </div>
+        </div>
+   </div>
+<!--   category,search,postJOb end-->
+   <div class="container" id="popularCategories">
+       <div class="ttl">
+           <h2>Popular Categories</h2>
+       </div>
+         <br> <br>
+       <div class="col-md-3 text-center">
+           <img src="img/electrician.jpg" alt="Image is missing" class="img-rounded">
+           <h3><a href="electrician.php">Electrician</a></h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/carm.jpg" alt="Image is missing" class="img-rounded" >
+           <h3><a href="car.php">Car servicer</a></h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/ac.jpg" alt="Image is missing" class="img-rounded" >
+           <h3><a href="acAll.php">AC servicer</a></h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/tvm.jpeg" alt="Image is missing" class="img-rounded" >
+           <h3><a href="tv.php">TV servicer</a></h3>
+       </div>
+       
+       
+   </div>
+<!--   popular category end-->
+<br> <br>
+<div id="contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="page-title text-center">
+					<h2>Quick Contact</h2>
+					<hr class="hr"></hr>
+					<p>Please write to us for any kind of query! 
+					<br>Suggest us any fix or any feature!</p>
+					<hr class="pg-titl-bdr-btm"></hr>
+				</div>
+                
+                
+				<div class="form-sec">
+                	<form action="contact.php" method="POST" role="form" class="contactForm">
+                       <div class="col-md-1"></div>
+                    	<div class="col-md-4 form-group">
+                            <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> <br>
+                            
+                            <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /> <br>
+                            
+                            <input type="text" class="form-control text-field-box" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-6 form-group">
+                            <textarea class="form-control text-field-box" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <br> <br> <br>
+                            <input type="submit" name="contactSubmit">
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</div>
+  <br> <br>
+<div class="about container" id="about">
+           <h2>About</h2>
+           <p>about section</p>
+</div>
+   <div class="footer container">
+           
+           <p>footer section</p>
+</div>
+    
+
+	  
+</body>
+</html>

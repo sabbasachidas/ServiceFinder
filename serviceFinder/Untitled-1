@@ -1,0 +1,37 @@
+$urPhoto=addslashes($_FILES['urPhoto']['tmp_name']);
+$urphoto=file_get_contents($urPhoto);
+$urphoto=base64_encode($urPhoto);
+
+
+
+
+<?php
+    ini_set('mysql.connect_timeout',300);
+    ini_set('default_socket_timeout',300);
+?>
+ 
+
+
+if(move_uploaded_files($_FILES['urPhoto']['tmp_name], $target)){
+    echo "success"
+}
+else{
+
+}
+
+
+
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        for($i=o; $i < count($row); i++){
+            $sql2= "SELECT srName,srAddress,srPhone,seServiceRatting FROM servicer Where srID='$row[$i}'";
+        }
+        
+        echo "<br> id: ". $row["srID"]. "<br>";
+        print_r($row);
+    }
+} else {
+    echo "0 results";
+}

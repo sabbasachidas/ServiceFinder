@@ -1,0 +1,40 @@
+<?php
+$host="localhost"; 
+$username="root"; 
+$password=""; 
+$db_name="servicefinder"; 
+ 
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+mysql_select_db("$db_name")or die("cannot select DB");
+$conn = new mysqli($host, $username, $password, $db_name);
+if (isset($_POST['selectLocation'])) {
+        $location = $_POST['selectLocation'];
+                
+    }
+if (isset($_POST['selectSkill'])) {
+        $skill = $_POST['selectSkill'];
+                
+    }
+$sql="SELECT srID FROM skills WHERE skill='ac service'";
+
+$result = $conn->query($sql);
+    
+   
+        
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+//        print_r ($row);
+        
+        
+        
+        
+    }
+} 
+
+else {
+    echo "0 results";
+}
+   
+     $conn->close();   
+?>

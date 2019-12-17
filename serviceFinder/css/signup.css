@@ -1,0 +1,127 @@
+/*NavBar start*/
+
+.main-navigation
+{
+    border-bottom: 1px solid #eee;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: rgba(231, 231, 231, 0.33);
+    padding: 10px 0px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #354242;
+    background-color: #fff;
+}
+.navbar-nav {
+    padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	border-bottom: 2px solid #E74C3C;
+    outline: none;
+}
+.navbar {
+	min-height: inherit;
+	margin-bottom: 0px;
+}
+.navbar-brand {
+	height: inherit;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 5px;
+    font-size: 42px;
+    margin-top: 5px;
+}
+
+.navbar-default .navbar-brand {
+    color: #e43c5c;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #354242;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0px 10px;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+.nav > li > a
+{
+	padding: 0px;
+}
+/*NavBar end*/
+
+
+/*banner start*/
+#banner {
+    margin-top: 50px;
+}
+#banner h1{
+    font-size: 40px;
+    text-align: center;
+    color: purple;
+}
+#banner p {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+/*banner end*/
+
+#searchForm {
+    margin-top: 0px;
+}
+#popularCategories img{
+    height: 150px;
+    width: 230px;
+}
+#popularCategories h3{
+    color: purple;
+}
+.hr{
+    
+    border-color: red;
+    width: 300px;
+}
+#categoryList p{
+    font-size: 12px;
+}
+.ttl{
+    background-color:skyblue;
+    height: 50px;
+}
+.ttl h2 {
+    color: purple;
+    font-size: 25px;
+    text-align: center;
+    padding: 9px 0 0;
+    
+}
+/*
+#categoryList li a{
+    font-size: 12px;
+}
+*/
+#categoryList .panel.panel-primary {
+    height: 355px;
+    width: 221px;
+}
+
+.about{
+    background-color:skyblue;
+    height: 50px;
+   
+}
+.about h2 {
+    color: purple;
+    font-size: 25px;
+    margin-top: 11px;
+    text-align: center;
+}

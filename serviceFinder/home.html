@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+<head>
+  <title>Service Finder</title>
+  <meta charset="utf-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <style>
+      body{
+           background-color: 
+#f4f6f9;
+
+      }
+    </style>
+    
+   
+
+  
+</head>
+<body>
+    
+    <script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	
+    
+
+	<!--HEADER START-->
+	<div class="main-navigation navbar-fixed-top">
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">Service Finder</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="index.html">Home</a></li>
+			    <li><a href="#contact">Contact</a></li>
+			    <li><a href="#about">About</a></li>
+			    <li><a href="login.html">Logout</a></li>
+			    
+			    <li><a href="signup.html">My account</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<!--HEADER END-->
+
+	<!--BANNER START-->
+	<div class="container" id="banner">
+	    <h1>Service Finder</h1>
+        <hr class="hr"></hr>
+	</div>
+	<!--BANNER END-->
+   <div class="container" id="CTP">
+       <div class="row">
+          <div class="col-md-3" id="categoryList">
+             
+             <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <p class="panel-title">Servicer Categories:</p>
+                  </div>
+                  <div class="panel-body">
+                  <ul class="list-group">
+                <li class="list-group-item"><a href="">Electrician</a><span class="badge">12</span></li>
+                <li class="list-group-item"><a href="">Plumber</a><span class="badge">17</span></li>
+                <li class="list-group-item"><a href="">AC servicer</a><span class="badge">15</span></li>
+                <li class="list-group-item"><a href="">Fridge servicer</a><span class="badge">21</span></li>
+                
+                <li class="list-group-item"><a href="">Car servicer</a><span class="badge">06</span></li>
+              <li class="list-group-item"><a href="">Fittings servicer</a><span class="badge">12</span></li>
+              
+              <li class="list-group-item"><a href="">Browse All</a></li>
+              </ul>
+                 </div>
+              </div>
+              
+              
+              
+              
+    
+          </div>
+          <div class="col-md-6 text-center white searchService">
+              
+                    
+                    <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Search Service...</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4>Service finder provides your nearest servicer's information and contact details. simply choose your your location and service you want hit search !!!</h4>
+			        <form action="" method="" id="searchForm" label="Search Service">
+				        <div class="form-group form-inline">
+                      <label for="selectLocation">Select Location:</label> <br>
+                      <select class="form-control " id="sel1">
+                        <option>Select Division</option>
+                        <option>Dhaka</option>
+                        <option>Chittagonj</option>
+                        <option>Sylhet</option>
+                        <option>Barishal</option>
+                        <option>Khulna</option>
+                        <option>Rajshahi</option>
+                      </select>
+
+                      <select class="form-control" id="sel1">
+                        <option>Select Area</option>
+                        <option>Dhaka</option>
+                        <option>Chittagonj</option>
+                        <option>Sylhet</option>
+                        <option>Barishal</option>
+                        <option>Khulna</option>
+                        <option>Rajshahi</option>
+                      </select>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label for="selectLocation">Select Service:</label> <br>
+                    <select class="form-control" id="sel1">
+                        <option>Service</option>
+                        <option>Electric</option>
+                        <option>Electronics</option>
+                        <option>Fridge</option>
+                        <option>TV</option>
+                        <option>Air Conditionar</option>
+                        <option>Fittings</option>
+                        <option>Plumber</option>
+                      </select>
+
+                      <select class="form-control" id="sel1">
+                        <option>Service</option>
+                        <option>Electric</option>
+                        <option>Electronics</option>
+                        <option>Fridge</option>
+                        <option>TV</option>
+                        <option>Air Conditionar</option>
+                        <option>Fittings</option>
+                        <option>Plumber</option>
+                      </select>
+                      <select class="form-control" id="sel1">
+                        <option>Service</option>
+                        <option>Electric</option>
+                        <option>Electronics</option>
+                        <option>Fridge</option>
+                        <option>TV</option>
+                        <option>Air Conditionar</option>
+                        <option>Fittings</option>
+                        <option>Plumber</option>
+                      </select>
+                    </div>
+                    <button id="btn-srch" type="submit" class="btn btn-default">Search</button>
+				    </form>
+				
+				    
+                
+             
+                  </div>
+              </div>
+              
+          </div>
+          <div class="col-md-3 text-center white">
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Post a job!</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4><a href="">Customers can post a job for servicers!</a></h4>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Find a job!</h3>
+                  </div>
+                  <div class="panel-body">
+                      <h4><a href="">View available jobs(for servicers)</a></h4>
+                  </div>
+              </div>
+          </div>
+        </div>
+   </div>
+<!--   category,search,postJOb end-->
+   <div class="container" id="popularCategories">
+       <div class="ttl">
+           <h2>Popular Categories</h2>
+       </div>
+         <br> <br>
+       <div class="col-md-3 text-center">
+           <img src="img/electrician.jpg" alt="Image is missing" class="img-rounded">
+           <h3>Electrician</h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/carm.jpg" alt="Image is missing" class="img-rounded" >
+           <h3>Car servicer</h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/ac.jpg" alt="Image is missing" class="img-rounded" >
+           <h3>AC servicer</h3>
+       </div>
+       <div class="col-md-3 text-center">
+           <img src="img/tvm.jpeg" alt="Image is missing" class="img-rounded" >
+           <h3>TV servicer</h3>
+       </div>
+       
+       
+   </div>
+<!--   popular category end-->
+<br> <br>
+<div id="contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="page-title text-center">
+					<h2>Quick Contact</h2>
+					<hr class="hr"></hr>
+					<p>Please write to us for any kind of query! 
+					<br>Suggest us any fix or any feature!</p>
+					<hr class="pg-titl-bdr-btm"></hr>
+				</div>
+                
+                
+				<div class="form-sec">
+                	<form action="" method="post" role="form" class="contactForm">
+                       <div class="col-md-1"></div>
+                    	<div class="col-md-4 form-group">
+                            <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> <br>
+                            
+                            <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /> <br>
+                            
+                            <input type="text" class="form-control text-field-box" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-6 form-group">
+                            <textarea class="form-control text-field-box" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <br> <br> <br>
+                            <button class="btn btn-default" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</div>
+  <br> <br>
+<div class="about container" id="about">
+           <h2>About</h2>
+           <p>about section</p>
+</div>
+   <div class="footer container">
+           
+           <p>footer section</p>
+</div>
+    
+
+	  
+</body>
+</html>
